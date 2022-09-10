@@ -13,6 +13,12 @@ class _HomePageStateFullState extends State<HomeStatefull> {
   String mensagem = 'Mensagem inicial';
 
   @override
+  void initState() {
+    super.initState();
+    mensagem = 'Passou pelo initState';
+  }
+
+  @override
   Widget build(BuildContext context) {
     //agora um build
     print('buildando o HomePageStateful');
